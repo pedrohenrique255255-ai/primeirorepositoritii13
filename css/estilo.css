@@ -9,47 +9,46 @@ a{
     text-decoration: none;
     border-radius: 15px;
     border:solid 2px;
+}
 
-    /* comportamento de linck a ser clicado*/
-    a:link{
-        color: brown;
-    }
-    /* comportamento de link depois de ser clicado*/
-    a: visited{
-        background-color: yellow
-    }
-    /* comportamento de passar o maouse sobre*/
-    a:hover{
-        background-color: blue;
-        color: aqua;
-    }
-    /* comportamento de ativação*/
-    a:active{
-        background-color: brown;
-        color: black;
-    }
-    button:link{
-        color: yellowgreen;
-    }
-    button:visited{
-        color: black;
-        background-color: yellow;
-    }
-    button:hover{
-        background-color: aqua;
-        color: blue;
-    }
-        
-    /*trabalhando com pseudo-elemento*/
-    p::first-line{
-        color: tomato;
-        font-variant: small-caps;
+/* comportamento de linck a ser clicado*/
+a:link{
+    color: brown;
+}
+/* comportamento de link depois de ser clicado*/
+a:visited{
+    background-color: yellow;
+}
+/* comportamento de passar o maouse sobre*/
+a:hover{
+    background-color:blue;
+    color: aqua;
+}
+/* comportamento de ativação*/
+a:active{
+    background-color: brown;
+    color: black;
+}
+button:link{
+    color: yellowgreen;
+}
+button:visited{
+    color: black;
+    background-color: yellow;
+}
+button:hover{
+    background-color: aqua;
+    color:blue;
+}
 
-    }
+/*trabalhando com pseudo-elemento*/
+p::first-line{
+    color: tomato;
+    font-variant: small-caps;
 }
 p::first-letter{
     color: yellow;
-    font-size: xx-large
+    font-size: xx-large;
 }
 h3::before{
     content:url(https://img.freepik.com/vetores-premium/icone-de-lupa-de-links-simples-ilustracao-do-icone-vetor-de-lupa-de-links-para-web-design-isolado-em-fundo-branco_98396-36686.jpg

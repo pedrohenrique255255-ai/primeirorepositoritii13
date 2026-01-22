@@ -2,12 +2,80 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Modelo de página</title>
 </head>
 <body>
-    <h3>modelo de pagína</h3>
+    <h1>Modelo de página</h1>
     <hr>
     
+    <h2>Página de teste</h2>
+    
+    <button onclick="mostrarCarros()">Carros</button>
+    <button onclick="mostrarPessoas()">Pessoas</button>
+    <button onclick="mostrarFrutas()">Frutas</button>
+    
+    <br><br>
+    
+    <div id="carros">
+        <h3>Carros antigos</h3>
+        <img src="https://images.unsplash.com/photo-1552519507-d9d5e137b9a4?w=300" width="300">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magnam a ridicenda ex indis quidem apperimes.</p>
+        
+        <h3>Carro novo</h3>
+        <img src="https://images.unsplash.com/photo-1617531653520-bd466ee15a1d?w=300" width="300">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magnam a ridicenda ex indis quidem apperimes.</p>
+        
+        <h3>Carros populares</h3>
+        <img src="https://images.unsplash.com/photo-1562911791-c7a97b729ec5?w=300" width="300">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magnam a ridicenda ex indis quidem apperimes.</p>
+    </div>
+    
+    <div id="pessoas" style="display:none;">
+        <h3>Frutas Cítricas</h3>
+        <img src="https://images.unsplash.com/photo-1600329211419-c36f3f67c5f3?w=300" width="300">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magnam a ridicenda ex indis quidem apperimes.</p>
+        
+        <h3>Frutas vermelhas</h3>
+        <img src="https://images.unsplash.com/photo-1464965911861-746a04b4bca6?w=300" width="300">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magnam a ridicenda ex indis quidem apperimes.</p>
+        
+        <h3>Frutas verdes</h3>
+        <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=300" width="300">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magnam a ridicenda ex indis quidem apperimes.</p>
+    </div>
+    
+    <div id="frutas" style="display:none;">
+        <h3>Adultos</h3>
+        <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=300" width="300">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magnam a ridicenda ex indis quidem apperimes.</p>
+        
+        <h3>Crianças</h3>
+        <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=300" width="300">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magnam a ridicenda ex indis quidem apperimes.</p>
+        
+        <h3>Idosos</h3>
+        <img src="https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?w=300" width="300">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magnam a ridicenda ex indis quidem apperimes.</p>
+    </div>
+    
+    <script>
+        function mostrarCarros() {
+            document.getElementById("carros").style.display = "block";
+            document.getElementById("pessoas").style.display = "none";
+            document.getElementById("frutas").style.display = "none";
+        }
+        
+        function mostrarPessoas() {
+            document.getElementById("carros").style.display = "none";
+            document.getElementById("pessoas").style.display = "block";
+            document.getElementById("frutas").style.display = "none";
+        }
+        
+        function mostrarFrutas() {
+            document.getElementById("carros").style.display = "none";
+            document.getElementById("pessoas").style.display = "none";
+            document.getElementById("frutas").style.display = "block";
+        }
+    </script>
 </body>
 </html>
