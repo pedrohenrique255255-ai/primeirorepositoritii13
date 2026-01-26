@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Responsiva</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* MOBILE FIRST - até 600px */
+        body {
+            background-color: #e3f2fd;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            color: #1565c0;
+        }
+
+        nav {
+            background-color: #1976d2;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        nav li {
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            background-color: #1565c0;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #0d47a1;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 25px;
+            font-size: 16px;
+            scroll-margin-top: 20px;
+        }
+
+        section h2 {
+            color: #1565c0;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        footer {
+            background-color: #1976d2;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        /* TABLET - 601px a 900px */
+        @media (min-width: 601px) and (max-width: 900px) {
+            body {
+                background-color: #fff3e0;
+            }
+
+            h1 {
+                font-size: 32px;
+                color: #e65100;
+            }
+
+            nav ul {
+                flex-direction: row;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            nav {
+                background-color: #ff6f00;
+            }
+
+            nav a {
+                background-color: #ef6c00;
+            }
+
+            nav a:hover {
+                background-color: #e65100;
+            }
+
+            main {
+                max-width: 700px;
+                font-size: 17px;
+            }
+
+            section h2 {
+                color: #e65100;
+                font-size: 24px;
+            }
+
+            footer {
+                background-color: #ff6f00;
+            }
+        }
+
+        /* DESKTOP - acima de 900px */
+        @media (min-width: 901px) {
+            body {
+                background-color: #f1f8e9;
+            }
+
+            h1 {
+                font-size: 40px;
+                color: #33691e;
+                padding: 30px;
+            }
+
+            nav {
+                background-color: #689f38;
+            }
+
+            nav ul {
+                flex-direction: row;
+                justify-content: space-around;
+                max-width: 1000px;
+                margin: 0 auto;
+                gap: 20px;
+            }
+
+            nav a {
+                background-color: #558b2f;
+                padding: 12px 30px;
+            }
+
+            nav a:hover {
+                background-color: #33691e;
+            }
+
+            main {
+                max-width: 900px;
+                font-size: 18px;
+                padding: 40px;
+            }
+
+            section {
+                margin-bottom: 35px;
+            }
+
+            section h2 {
+                color: #33691e;
+                font-size: 28px;
+            }
+
+            footer {
+                background-color: #689f38;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha Página Responsiva</h1>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>Início</h2>
+            <p>
+                Bem-vindo à página inicial! Observe como o layout se adapta a diferentes dispositivos.
+            </p>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <p>
+                Informações sobre o projeto. Design responsivo para melhor experiência em qualquer tela.
+            </p>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>
+                Entre em contato conosco! Navegue pelo menu para explorar as diferentes seções.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Página Responsiva | Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
